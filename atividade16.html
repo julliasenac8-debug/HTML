@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade16</title>
+</head>
+<body>
+     <h1>A soma de dois números</h1> 
+     <p>Digite os números para calcular:</p>
+   <input type="number" name="" id="numero1" placeholder="Digite o número">
+   <input type="number" name="" id="numero2" placeholder="Digite o número">
+
+   <button onclick="somar()">somar</button>
+
+   <p id="resultado"></p>
+    <script>
+        function somar(){
+            let numero1 = Number(document.getElementById("numero1").value);
+          let numero2 = Number(document.getElementById("numero2").value);
+
+          let total = numero1 + numero2 
+         document.getElementById("resultado").innerHTML = "O resultado é: " + total;
+        }
+    </script>
+</body>
+</html>
